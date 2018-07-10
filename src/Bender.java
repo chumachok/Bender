@@ -8,10 +8,6 @@ public class Bender
         Fry PhilipFry = new Fry("Interstellar");
         Fry PFry = new Fry ("Terminator");
 
-//        System.out.println("Insert a movie name: ");
-//        String movie = Enter.nextLine();
-//
-//        PhilipFry.setName(movie);
         PhilipFry.outPut();
         PFry.outPut();
     }
