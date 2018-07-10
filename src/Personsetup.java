@@ -1,10 +1,10 @@
 import java.util.Random;
 
-public class Person_setup
+public class Personsetup
 {
-    public static void Main ()
+    public static void main (String[] args)
     {
-        Random random = new Random(5);
+        Random random = new Random();
 
         String name = "";
         int age=0;
@@ -17,7 +17,7 @@ public class Person_setup
 
         String hello = "Create a person";
         String input_name = "Input person's name: ";
-        String input_age = "Input person's age: ";
+        String input_age = "Input person's aaprox age: ";
 
         String [] person_stats = new String[7];
 
@@ -33,8 +33,13 @@ public class Person_setup
         Descriptions input = new Descriptions();
 
         output.display_text(hello);
-        output.display_text(name);
+        output.display_text(input_name);
         name = input.insert_text();
+        output.display_text(input_age);
+        age = Integer.parseInt(input.insert_text()) + random.nextInt(5);
+        output.display_text(hello);
+
+
 
 
 

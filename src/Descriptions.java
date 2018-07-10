@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class Descriptions
 {
-
-
     public static String insert_text ()
     {
         Scanner scan = new Scanner(System.in);
