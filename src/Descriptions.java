@@ -19,11 +19,11 @@ public class Descriptions
         System.out.println(stat_values[point]);
     }
 
-    public static void display_all_stats (String[] stat_names, String [] stat_values)
+    public static void display_all_stats (String[] stat_names, String [][] stat_values)
     {
-        for (int i = 0; i <= stat_names.length; i++)
-        {
-            System.out.println(stat_names[i]+ ": " + stat_values[i]);
+        for (int i = 0; i <= stat_values.length-1; i++) {
+            for (int j = 0; j <= stat_names.length - 1; j++)
+                System.out.println(stat_names[j] + ": " + stat_values[i][j]);
         }
     }
 
