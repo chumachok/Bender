@@ -24,7 +24,9 @@ public class Descriptions
         for (int i = 0; i <= stat_values.length-1; i++) {
             for (int j = 0; j <= stat_names.length - 1; j++)
                 System.out.println(stat_names[j] + ": " + stat_values[i][j]);
+            System.out.println(" ");
         }
+
     }
 
 }
