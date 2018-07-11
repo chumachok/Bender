@@ -14,5 +14,17 @@ public class Descriptions
         System.out.println(text);
     }
 
+    public static void display_neded_stat (int point, String[] stat_values)
+    {
+        System.out.println(stat_values[point]);
+    }
+
+    public static void display_all_stats (String[] stat_names, String [] stat_values)
+    {
+        for (int i = 0; i <= stat_names.length; i++)
+        {
+            System.out.println(stat_names[i]+ ": " + stat_values[i]);
+        }
+    }
 
 }
