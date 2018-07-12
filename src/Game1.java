@@ -1,17 +1,14 @@
-import java.util.Random;
-
 public class Game1
 {
-    public static void main (String[] args) {
-
-        String[] stat_names = new String[8];
+    public static void main (String[] args)
+    {
+        String[] Stat_names = new String[8];
         Descriptions output = new Descriptions();
         Descriptions input = new Descriptions();
         Descriptions printAll = new Descriptions();
         Person_creation player = new Person_creation();
         Descriptions SetNames = new Descriptions();
-
-        stat_names = SetNames.Set_stat_names(stat_names);
+        Stat_names = SetNames.Set_stat_names(Stat_names);
 
         String players_number = "Input number of players: ";
 
@@ -24,6 +21,17 @@ public class Game1
             person_stats[player_counter] = player.Creation();
         }
 
-        printAll.display_all_stats(stat_names, person_stats );
+        printAll.display_all_stats(Stat_names, person_stats );
+
+        for (int player_counter = 0; player_counter <= players_num-1; player_counter++)
+        {
+            output.display_text("Select weapon");
+
+
+
+        }
+
+
+
     }
 }

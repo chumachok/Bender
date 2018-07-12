@@ -6,7 +6,6 @@ public class Person_creation
     public static String [] Creation ()
     {
         Random random = new Random();
-
         Descriptions output = new Descriptions();
         Descriptions input = new Descriptions();
         Stat_Generation Stats = new Stat_Generation();

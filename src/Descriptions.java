@@ -10,8 +10,8 @@ public class Descriptions
         stat_names[3] = "Strength";
         stat_names[4] = "Armor";
         stat_names[5] = "Luck";
-        stat_names[6] = "health";
-        stat_names[7] = "intelligence";
+        stat_names[6] = "Health";
+        stat_names[7] = "Intelligence";
 
         return stat_names;
     }
