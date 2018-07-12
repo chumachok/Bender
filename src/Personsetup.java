@@ -9,15 +9,9 @@ public class Personsetup
         Descriptions input = new Descriptions();
         Descriptions printAll = new Descriptions();
         Person_creation player = new Person_creation();
+        Descriptions SetNames = new Descriptions();
 
-        stat_names[0] = "Name";
-        stat_names[1] = "Age";
-        stat_names[2] = "Experience";
-        stat_names[3] = "Strength";
-        stat_names[4] = "Armor";
-        stat_names[5] = "Luck";
-        stat_names[6] = "health";
-        stat_names[7] = "intelligence";
+        stat_names = SetNames.Set_stat_names(stat_names);
 
         String players_number = "Input number of players: ";
 

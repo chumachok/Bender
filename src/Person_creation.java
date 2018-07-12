@@ -12,7 +12,7 @@ public class Person_creation
         Stat_Generation Stats = new Stat_Generation();
 
         String input_name = "Input person's name: ";
-        String input_age = "Input person's aaprox age: ";
+        String input_age = "Input person's approx age: ";
         String [] person_stats = new String [8];
 
         output.display_text(input_name);
