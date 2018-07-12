@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Personsetup
+public class Game1
 {
     public static void main (String[] args) {
 
