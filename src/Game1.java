@@ -1,5 +1,3 @@
-import javax.swing.*;
-
 public class Game1
 {
     public static void main (String[] args)
@@ -17,11 +15,11 @@ public class Game1
 
         output.display_text(players_number);
 
+//        System.out.println(Integer.toString(players_number));
 //        start.display_Frame(players_number_title, players_number);
 
 
         int players_num = Integer.parseInt(input.insert_text());
-
         String[][] person_stats = new String[players_num][8];
 
         for (int player_counter = 0; player_counter <= players_num-1; player_counter++)
