@@ -1,7 +1,6 @@
 package Characteristic;
 
 import Dialogs.InputMsg;
-import Dialogs.Messages;
 import Dialogs.OutputMsg;
 
 import java.util.Random;

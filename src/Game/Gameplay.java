@@ -1,39 +1,42 @@
 package Game;
 
+import Characteristic.AllStats;
 import Characteristic.CreateStat;
+import Dialogs.Input;
+import Dialogs.InputMsg;
+import Dialogs.Output;
 import Dialogs.OutputMsg;
-
-interface Player {};
-
-
 
 public class Gameplay
 {
     public static void main (String[] args)
     {
         CreateStat SetStat = new CreateStat();
-        OutputMsg DisplayText = new OutputMsg();
+        Output DisplayText = new OutputMsg();
+        Input getText = new InputMsg();
 
-        int a = 0;
+        DisplayText.showText("Set number of Players: ");
+        int quantityPlayers = getText.getIntValue();
 
-        SetStat.getName();
-        SetStat.getAge();
-        SetStat.getExperience(a);
-        SetStat.getHealth(a);
-        SetStat.getStrength(a);
-        SetStat.getArmor(a);
-        SetStat.getIntelligence(a);
-        SetStat.getLuck(a);
+        AllStats [] array = new AllStats[quantityPlayers];
 
+        for (int i = 0; i <= array.length-1; i++)
+        {
+            array [i] = new AllStats();
+            array [i].Name = SetStat.getName();
+            array [i].Age = SetStat.getAge();
+            array [i].Experience = SetStat.getExperience(array [i].Age);
+            array [i].Health = SetStat.getHealth(array [i].Age);
+            array [i].Strength = SetStat.getStrength(array [i].Age);
+            array [i].Armor = SetStat.getArmor(array [i].Age);
+            array [i].Intelligence = SetStat.getIntelligence(array [i].Age);
+            array [i].Luck = SetStat.getLuck(array [i].Age);
+        }
 
-
-
-
-
+        for (int i = 0; i <= array.length-1; i++)
+        {
+            DisplayText.showPersonStats(array[i]);
+            DisplayText.showText("");
+        }
     }
-
-
-
-
-
 }
