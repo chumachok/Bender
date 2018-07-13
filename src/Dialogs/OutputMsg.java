@@ -3,7 +3,7 @@ package Dialogs;
 import Characteristic.AllStats;
 import java.util.ArrayList;
 
-public abstract class OutputMsg implements Messages
+public class OutputMsg implements Messages
 {
     @Override
     public void showText(String text)
@@ -38,5 +38,20 @@ public abstract class OutputMsg implements Messages
         {
             System.out.println(b);
         }
+    }
+
+    @Override
+    public void showInt(int value) {
+
+    }
+
+    @Override
+    public String getStringValue() {
+        return null;
+    }
+
+    @Override
+    public int getIntValue() {
+        return 0;
     }
 }

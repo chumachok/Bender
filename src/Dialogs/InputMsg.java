@@ -1,10 +1,14 @@
 package Dialogs;
 
+import Characteristic.AllStats;
+
 import java.util.Scanner;
 
-public abstract class InputMsg implements Messages
+public class InputMsg implements Messages
 {
     Scanner scanner = new Scanner(System.in);
+
+
 
     @Override
     public String getStringValue() {
@@ -17,4 +21,19 @@ public abstract class InputMsg implements Messages
         int intValue = scanner.nextInt();
         return intValue;
     }
+
+    @Override
+    public void showStringArray(String[] textarray) {}
+
+    @Override
+    public void showIntArray(int[] intarray) {}
+
+    @Override
+    public void showPersonStats(AllStats fullperson) {}
+
+    @Override
+    public void showText(String text) {}
+
+    @Override
+    public void showInt(int value) {}
 }
