@@ -29,7 +29,7 @@ public class OutputMsg implements Output
     @Override
     public void showStrengthImpr(AllImprovements strengthImpr)
     {
-        System.out.println("Small Sword: " + strengthImpr.smallSword);
+        System.out.println("Small Sword: " + strengthImpr.smallSword) ;
 
     }
 
