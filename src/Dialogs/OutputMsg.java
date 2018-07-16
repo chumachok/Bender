@@ -50,6 +50,7 @@ public class OutputMsg implements Output
 
             System.out.println(intarray[i]);
 
+
         }
     }
 
