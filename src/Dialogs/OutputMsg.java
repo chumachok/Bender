@@ -55,5 +55,7 @@ public class OutputMsg implements Output
     public void showInt(int value) {
 
 
+
+
     }
 }
