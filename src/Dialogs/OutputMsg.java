@@ -51,8 +51,6 @@ public class OutputMsg implements Output
         }
     }
 
-
-
     @Override
     public void showInt(int value) {
 
