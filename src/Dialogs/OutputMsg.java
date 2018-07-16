@@ -22,7 +22,7 @@ public class OutputMsg implements Output
         System.out.println("Strength: " + fullperson.Strength);
         System.out.println("Health: " + fullperson.Health);
         System.out.println("Experience: " + fullperson.Experience);
-        System.out.println("Intelligence: " + fullperson.Intelligence);
+        System.out.println("Intelligence: " + fullperson.Intelligence) ;
         System.out.println("Luck: " + fullperson.Luck);
     }
 
