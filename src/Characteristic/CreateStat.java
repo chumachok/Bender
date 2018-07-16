@@ -99,7 +99,8 @@ public class CreateStat implements Stats
     }
 
     @Override
-    public int getIntelligence(int age) {
+    public int getIntelligence(int age)
+    {
         int counter = 0;
         int intelligence = 0;
 
@@ -109,5 +110,18 @@ public class CreateStat implements Stats
             counter++;
         }
         return intelligence;
+    }
+
+    @Override
+    public int getStamina(int age) {
+        int counter = 0;
+        int stamina = 0;
+
+        while (counter <= age)
+        {
+            stamina += random.nextInt(200);
+            counter++;
+        }
+        return stamina;
     }
 }

@@ -10,4 +10,5 @@ public interface Stats
     int getLuck(int age);
     int getHealth(int age);
     int getIntelligence(int age);
+    int getStamina (int age);
 }

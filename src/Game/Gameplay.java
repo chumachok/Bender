@@ -31,6 +31,7 @@ public class Gameplay
             array [i].Armor = SetStat.getArmor(array [i].Age);
             array [i].Intelligence = SetStat.getIntelligence(array [i].Age);
             array [i].Luck = SetStat.getLuck(array [i].Age);
+            array [i].Stamina = SetStat.getStamina(array [i].Age);
         }
 
         for (int i = 0; i <= array.length-1; i++)
@@ -38,5 +39,21 @@ public class Gameplay
             DisplayText.showPersonStats(array[i]);
             DisplayText.showText("");
         }
+
+        DisplayText.showText("player " + array[1].Name + " Select what to modify: ");
+
+        String statToModify = getText.getStringValue();
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

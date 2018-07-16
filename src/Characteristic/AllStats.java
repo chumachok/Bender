@@ -10,4 +10,5 @@ public class AllStats
     public int Luck;
     public int Health;
     public int Intelligence;
+    public int Stamina;
 }

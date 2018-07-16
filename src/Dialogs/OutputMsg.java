@@ -1,6 +1,9 @@
 package Dialogs;
 
 import Characteristic.AllStats;
+import Weapons.AllImprovements;
+
+import java.sql.SQLOutput;
 
 public class OutputMsg implements Output
 {
@@ -23,28 +26,35 @@ public class OutputMsg implements Output
         System.out.println("Luck: " + fullperson.Luck);
     }
 
-//    @Override
-//    public void showStringArray(String[] textarray)
-//    {
-//        for (int i = 0; i <= textarray.length-1; i++)
-//        {
-//            System.out.println(textarray[i]);
-//        }
-//    }
-//
-//    @Override
-//    public void showIntArray(int[] intarray)
-//    {
-//        for (int i = 0; i <= intarray.length-1; i++)
-//        {
-//            System.out.println(intarray[i]);
-//        }
-//    }
+    @Override
+    public void showStrengthImpr(AllImprovements strengthImpr)
+    {
+        System.out.println("Small Sword: " + strengthImpr.smallSword);
+
+    }
+
+    @Override
+    public void showStringArray(String[] textarray)
+    {
+        for (int i = 0; i <= textarray.length-1; i++)
+        {
+            System.out.println(textarray[i]);
+        }
+    }
+
+    @Override
+    public void showIntArray(int[] intarray)
+    {
+        for (int i = 0; i <= intarray.length-1; i++)
+        {
+            System.out.println(intarray[i]);
+        }
+    }
 
 
 
-//    @Override
-//    public void showInt(int value) {
-//
-//    }
+    @Override
+    public void showInt(int value) {
+
+    }
 }
