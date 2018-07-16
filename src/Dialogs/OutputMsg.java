@@ -48,7 +48,7 @@ public class OutputMsg implements Output
         for (int i = 0; i <= intarray.length-1; i++)
         {
 
-            System.out.println(intarray[i]);
+            System.out.println(intarray[i]) ;
 
 
         }
